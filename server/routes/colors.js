@@ -7,7 +7,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:name', (req, res) => {
-    res.json("Here is a specific color");
+    let color = req.params.name
+    res.json({ color })
 });
 
 
